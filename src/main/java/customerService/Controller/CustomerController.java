@@ -33,6 +33,12 @@ public class CustomerController {
 		return customerService.getAllCustomers();
 	}
 	
+	@GetMapping("/addition")
+	public int addTwoNum()
+	{
+		return 5+4;
+	}
+	
 	@GetMapping("/{id}")
 	public ResponseEntity<Customer> getCustomerById(@PathVariable Long id) throws CustomerException
 	{
